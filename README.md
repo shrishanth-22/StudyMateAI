@@ -1,52 +1,67 @@
 # StudyMate AI 📚
 
-An AI-powered learning assistant that converts study material (lecture notes, textbooks, and handouts) into custom summaries, interactive quizzes, flashcards, and Q&A bots to accelerate learning.
+An AI-powered personal study assistant that transforms your study materials into summaries, quizzes, flashcards, and an interactive Q&A assistant.
 
-## Features
-- **📄 PDF Understanding**: Extract text seamlessly from uploaded PDF notes.
-- **📖 AI Summaries**: Condense complex materials into organized key concepts, definitions, and exam tips.
-- **📝 Smart Quizzes**: Auto-generate multiple-choice quizzes with feedback, answer justifications, and final score calculations.
-- **🎴 AI Flashcards**: Generate interactive study cards with terms on the front and definitions on the back to test recall.
-- **🤖 Study Chat (Ask AI)**: Chat with an AI assistant that answers questions *exclusively* based on the uploaded notes.
+Upload your lecture notes, textbooks, or PDFs and let AI help you learn faster and smarter.
 
-## Tech Stack
-- **Python**: Core programming language.
-- **Streamlit**: Modern UI frontend.
-- **Google Gemini API** (`gemini-2.5-flash`): Generative AI model powering the summary, quiz, flashcard, and Q&A systems.
-- **PyPDF**: PDF parsing and text extraction.
-- **Python-Dotenv**: Environment variable configuration.
+---
 
-## Installation & Setup
+## ✨ Features
 
-1. **Clone the repository:**
-   ```bash
-   git clone <your-repo-url>
-   cd StudyMateAI
-   ```
+### 📄 PDF Understanding
+- Upload PDF notes, textbooks, or study materials.
+- Automatically extracts text from documents.
 
-2. **Set up a virtual environment (optional but recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+### 📖 AI Summaries
+- Converts long notes into structured summaries.
+- Generates:
+  - Key Concepts
+  - Important Definitions
+  - Exam Tips
 
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 📝 Smart Quiz Generator
+- Creates multiple-choice questions from your notes.
+- Provides:
+  - Options
+  - Correct answers
+  - Explanations
+  - Score tracking
 
-4. **Add your API Key:**
-   Create a `.env` file in the root directory and add your Google Gemini API Key:
-   ```env
-   GEMINI_API_KEY=your_gemini_api_key_here
-   ```
+### 🎴 AI Flashcards
+- Generates interactive flashcards.
+- Helps with active recall learning.
 
-5. **Run the Streamlit application:**
-   ```bash
-   streamlit run app.py
-   ```
+### 🤖 Study Chat
+- Ask questions about your uploaded notes.
+- AI answers only using the provided study material.
 
-## Future Improvements
-- **📅 Study Planner**: Enter your exam date and syllabus to generate an AI-powered study schedule.
-- **📈 Progress Tracking**: Track quiz scores and flashcard completion history over time.
-- **🎙️ Voice Explanation**: Have the AI read notes aloud or explain concepts like a teacher using audio generation.
+---
+
+## 🏗️ How It Works
+PDF Upload
+|
+↓
+Text Extraction (PyPDF)
+|
+↓
+Google Gemini AI
+|
+↓
+Summary / Quiz / Flashcards / Q&A
+|
+↓
+Student Learning Interface
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Streamlit** - Web application interface
+- **Google Gemini API (gemini-2.5-flash)** - Generative AI
+- **PyPDF** - PDF text extraction
+- **Python-dotenv** - Secure API key management
+
+---
+
